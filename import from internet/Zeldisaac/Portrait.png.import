@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://cpl3hsqf7s4nk"
+path="res://.godot/imported/Portrait.png-8ca7f360de442a1fc987abcdf901b3a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/Zeldisaac/Portrait.png"
+dest_files=["res://.godot/imported/Portrait.png-8ca7f360de442a1fc987abcdf901b3a9.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

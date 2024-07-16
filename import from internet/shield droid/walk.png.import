@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://4d33gh640oan"
+path="res://.godot/imported/walk.png-97d2d809466dc871bc6d8b8990ee7327.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/shield droid/walk.png"
+dest_files=["res://.godot/imported/walk.png-97d2d809466dc871bc6d8b8990ee7327.ctex"]
 
 [params]
 

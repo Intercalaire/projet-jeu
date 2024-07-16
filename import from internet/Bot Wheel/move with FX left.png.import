@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://bwo7xqg4e3e52"
+path="res://.godot/imported/move with FX left.png-ba0ddcc6187067a187f464a9ab7c26f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/Bot Wheel/move with FX left.png"
+dest_files=["res://.godot/imported/move with FX left.png-ba0ddcc6187067a187f464a9ab7c26f0.ctex"]
 
 [params]
 

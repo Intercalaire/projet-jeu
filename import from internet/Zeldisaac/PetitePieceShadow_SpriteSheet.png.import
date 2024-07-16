@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://dykk61dacc7u6"
+path="res://.godot/imported/PetitePieceShadow_SpriteSheet.png-624e1c76604ced0cc65f84f247aeb789.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/Zeldisaac/PetitePieceShadow_SpriteSheet.png"
+dest_files=["res://.godot/imported/PetitePieceShadow_SpriteSheet.png-624e1c76604ced0cc65f84f247aeb789.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

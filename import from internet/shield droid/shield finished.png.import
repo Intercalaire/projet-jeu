@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://b6e4hixk0e7q4"
+path="res://.godot/imported/shield finished.png-1ecd7d2a3cfecfa4aed586fb85c2f54b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/shield droid/shield finished.png"
+dest_files=["res://.godot/imported/shield finished.png-1ecd7d2a3cfecfa4aed586fb85c2f54b.ctex"]
 
 [params]
 

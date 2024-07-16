@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://ddek7ev6coqo0"
+path="res://.godot/imported/shock attack.png-0623d65f992487f2b94b533264df4c24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/shield droid/shock attack.png"
+dest_files=["res://.godot/imported/shock attack.png-0623d65f992487f2b94b533264df4c24.ctex"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b84orfumrqw8l"
+path="res://.godot/imported/Validation.ogg-ce5041c63ce44fcc042c9950619da59d.oggvorbisstr"
+
+[deps]
+
+source_file="res://import from internet/Zeldisaac/Validation.ogg"
+dest_files=["res://.godot/imported/Validation.ogg-ce5041c63ce44fcc042c9950619da59d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

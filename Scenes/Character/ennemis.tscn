@@ -1,0 +1,128 @@
+[gd_scene load_steps=19 format=3 uid="uid://cid8w5mbwmgrc"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/ennemis.gd" id="1_am3ls"]
+[ext_resource type="Texture2D" uid="uid://bytf1ka2jfgqo" path="res://Scenes/Character/ennemis/shock attack.png" id="2_kk5ju"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cw77p"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 0, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmf4w"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 31, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7s6tc"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 62, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0tf4"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 93, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5orgp"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 124, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qv0h"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 155, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fkyx"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 186, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkrrq"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 217, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edsrv"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 248, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu726"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 279, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xerf"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 310, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_df2ru"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 341, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7i4vb"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 372, 90, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4enej"]
+atlas = ExtResource("2_kk5ju")
+region = Rect2(0, 403, 90, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2d6qc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cw77p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmf4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7s6tc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0tf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5orgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qv0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fkyx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkrrq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edsrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu726")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xerf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_df2ru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7i4vb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4enej")
+}],
+"loop": true,
+"name": &"ennemi1",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_42gyf"]
+radius = 12.0
+
+[node name="ennemis" type="CharacterBody2D"]
+script = ExtResource("1_am3ls")
+metadata/_edit_lock_ = true
+
+[node name="ennemisSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.28889, 1.46774)
+sprite_frames = SubResource("SpriteFrames_2d6qc")
+animation = &"ennemi1"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 7)
+shape = SubResource("CircleShape2D_42gyf")
+metadata/_edit_lock_ = true

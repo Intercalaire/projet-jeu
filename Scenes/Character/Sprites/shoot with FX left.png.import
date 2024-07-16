@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://bt0jnthj0res4"
+path="res://.godot/imported/shoot with FX left.png-750200091833edb650ab5aadf280a1bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://Scenes/Character/Sprites/shoot with FX left.png"
+dest_files=["res://.godot/imported/shoot with FX left.png-750200091833edb650ab5aadf280a1bd.ctex"]
 
 [params]
 

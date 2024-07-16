@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://c5yrcj1wggqtf"
+path="res://.godot/imported/Character.png-fdbc4f35b63cc165f492f9874846bb1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://Scenes/Character/Sprites/Character.png"
+dest_files=["res://.godot/imported/Character.png-fdbc4f35b63cc165f492f9874846bb1e.ctex"]
 
 [params]
 

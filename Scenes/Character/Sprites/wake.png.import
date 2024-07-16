@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://dg5bgr306kxg1"
+path="res://.godot/imported/wake.png-9c37512de22e5423a59c932c44ed01e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://Scenes/Character/Sprites/wake.png"
+dest_files=["res://.godot/imported/wake.png-9c37512de22e5423a59c932c44ed01e6.ctex"]
 
 [params]
 

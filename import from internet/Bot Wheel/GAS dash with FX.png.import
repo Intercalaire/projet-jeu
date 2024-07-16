@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://dxw3d2687368y"
+path="res://.godot/imported/GAS dash with FX.png-bfdcdfb35911d0ea2860af8436de34b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/Bot Wheel/GAS dash with FX.png"
+dest_files=["res://.godot/imported/GAS dash with FX.png-bfdcdfb35911d0ea2860af8436de34b3.ctex"]
 
 [params]
 

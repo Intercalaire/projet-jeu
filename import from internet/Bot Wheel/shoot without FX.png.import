@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://4ueygdgc0wvu"
+path="res://.godot/imported/shoot without FX.png-8f4fe64cd3b7784e6d9b35c761caf0d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/Bot Wheel/shoot without FX.png"
+dest_files=["res://.godot/imported/shoot without FX.png-8f4fe64cd3b7784e6d9b35c761caf0d3.ctex"]
 
 [params]
 

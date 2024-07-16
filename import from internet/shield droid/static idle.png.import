@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpjlxpgkrpeq"
-path="res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"
+uid="uid://dg0bi0m5ltd4j"
+path="res://.godot/imported/static idle.png-e2f13ef2d92ea6f7195a4e9b1eddc5df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/Tilesets/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-b0bcfe18657129bbf5117e68ab9a4198.ctex"]
+source_file="res://import from internet/shield droid/static idle.png"
+dest_files=["res://.godot/imported/static idle.png-e2f13ef2d92ea6f7195a4e9b1eddc5df.ctex"]
 
 [params]
 
