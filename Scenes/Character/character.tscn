@@ -249,7 +249,8 @@ metadata/_edit_lock_ = true
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.58974, 2)
 sprite_frames = SubResource("SpriteFrames_346bi")
-animation = &"start"
+animation = &"moveLeft"
+frame_progress = 0.01089
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 3)
