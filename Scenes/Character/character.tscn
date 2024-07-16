@@ -139,7 +139,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_cuul7")
 }],
 "loop": false,
-"name": &"attackLeft",
+"name": &"attack_left",
 "speed": 8.0
 }, {
 "frames": [{
@@ -156,7 +156,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_gngsu")
 }],
 "loop": false,
-"name": &"attackRight",
+"name": &"attack_right",
 "speed": 8.0
 }, {
 "frames": [{
@@ -185,7 +185,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_7d0yk")
 }],
 "loop": true,
-"name": &"moveLeft",
+"name": &"move_left",
 "speed": 8.0
 }, {
 "frames": [{
@@ -214,7 +214,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_vxy3r")
 }],
 "loop": true,
-"name": &"moveRight",
+"name": &"move_right",
 "speed": 8.0
 }, {
 "frames": [{
@@ -249,9 +249,11 @@ metadata/_edit_lock_ = true
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.58974, 2)
 sprite_frames = SubResource("SpriteFrames_346bi")
-animation = &"moveLeft"
-frame_progress = 0.01089
+animation = &"attack_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 3)
 shape = SubResource("CapsuleShape2D_ahmns")
+
+[node name="Position2D" type="Marker2D" parent="."]
+position = Vector2(60, 0)

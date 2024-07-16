@@ -1,15 +1,15 @@
 extends Node2D
 
-@onready var cursor = $CursorLayer/Cursor
+@onready var cursor = $"."
 @onready var pause_menu = $GUI/InputSettings
 
-var game_paused = false
+var game_paused = true
+var arrow = load("res://Scenes/Character/mouse/mouse viseur grand.png")
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	Input.set_custom_mouse_cursor(arrow)
 
-func _process(delta):
-	cursor.global_position = get_global_mouse_position()
 
 func _unhandled_input(event):
 	if event.is_action_pressed("paused"):

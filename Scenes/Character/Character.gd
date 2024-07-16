@@ -2,11 +2,13 @@ extends CharacterBody2D
 
 @onready var animated_sprite = get_node("AnimatedSprite")    # appel d'une librairie
 
+const bulletPath = preload("res://bullet.tscn") 
+
 var dir_dict : Dictionary = {
-	"Left": Vector2.LEFT,
-	"Right": Vector2.RIGHT,
-	"Up": Vector2.UP,
-	"Down": Vector2.DOWN
+	"_left": Vector2.LEFT,
+	"_right": Vector2.RIGHT,
+	"_up": Vector2.UP,
+	"_down": Vector2.DOWN
 }
 
 var speed : float = 300.0 # de combien je me deplace
@@ -29,9 +31,15 @@ func _input(event):
 	direction = direction.normalized() #permet davoir un vecteur de toujours de longueur 1 (car sinon le deplacement en diagonal fais bouger le perso tres vite)
 	
 	
+	if Input.is_action_just_pressed("ui_accept"):
+		is_attacking = true
+
 	var dir_name = _find_dir_name(direction)
+	if is_attacking:
+		animated_sprite.play("attack" + dir_name)
 	#animation de mouvement:
-	animated_sprite.play("move" + dir_name) #appel d'une data struct
+	else:
+		animated_sprite.play("move" + dir_name) #appel d'une data struct
 	
 #data struct me ressort un mot qui va se combiner au animated_sprite.play("move" + XX pour cree la direction
 func _find_dir_name(dir: Vector2): #se balade dans un dictionnaire et regarde ou est dans le dico pour ressotir l'index de la ou on est pour la cle aka la direction de notre perse
@@ -43,3 +51,10 @@ func _find_dir_name(dir: Vector2): #se balade dans un dictionnaire et regarde ou
 	var dir_key = dir_keys_array[dir_index]
 
 	return dir_key 
+
+#LES BALLES
+
+func shoot():
+	var bullet = bulletPath.instantiate()
+	bullet.positon = $Position2D.global_position
+	get_parent().add_child(bullet)

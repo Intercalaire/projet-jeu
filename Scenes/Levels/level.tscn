@@ -14,7 +14,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/probability = 0.0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(13, -1, 10.25, 10.5, -11.75, 10, -13.75, -1.5)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-13.75, -4, 0.25, -4.75, 13, -3.25, 11.5, 5.25, 10.75, 10.75, -9.25, 10, -12.25, 5)
 0:0/1 = 1
 0:0/1/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/1/physics_layer_0/angular_velocity = 0.0
@@ -665,7 +665,7 @@ position = Vector2(882, 149)
 [node name="Decorations" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_67y58")
 format = 2
-layer_0/tile_data = PackedInt32Array(17, 131073, 0, 65553, 131073, 1, 18, 196609, 0, 65554, 196609, 1, 851996, 1, 1, 917532, 1, 2, 131088, 1, 0, 131091, 1, 0, 851985, 65537, 0, 196619, 65537, 0, 851972, 1, 1, 917508, 1, 2)
+layer_0/tile_data = PackedInt32Array(17, 131073, 0, 65553, 131073, 1, 18, 196609, 0, 65554, 196609, 1, 131091, 0, 0, 131088, 0, 0, 262152, 65536, 0, 1048582, 65536, 0, 851998, 0, 1, 917534, 0, 2, 458781, 0, 1, 524317, 0, 2)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 metadata/_edit_lock_ = true
@@ -675,6 +675,7 @@ visible = false
 polygon = PackedVector2Array(64, 63, 1089, 64, 1090, 609, 63, 610, 64, 73, -50, 59, -103, 827, 1595, 701, 1295, -63, -17, -163, -1, 64, 64, 72)
 metadata/_edit_lock_ = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="GUI" type="CanvasLayer" parent="."]
 
-[node name="InputSettings" parent="CanvasLayer" instance=ExtResource("4_sn3c7")]
+[node name="InputSettings" parent="GUI" instance=ExtResource("4_sn3c7")]
+metadata/_edit_use_anchors_ = true
