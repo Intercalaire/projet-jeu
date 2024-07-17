@@ -4,11 +4,11 @@ extends Node2D
 @onready var pause_menu = $GUI/InputSettings
 
 var game_paused = true
-var arrow = load("res://Scenes/Character/mouse/mouse viseur grand.png")
+var mouse = load("res://Scenes/Character/mouse/mouse viseur grand.png")
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	Input.set_custom_mouse_cursor(arrow)
+	Input.set_custom_mouse_cursor(mouse)
 
 
 func _unhandled_input(event):

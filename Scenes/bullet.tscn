@@ -1,17 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddwpxon24yf8t"]
+[gd_scene load_steps=4 format=3 uid="uid://ddwpxon24yf8t"]
 
-[ext_resource type="Texture2D" uid="uid://b8njuvkiw2dk" path="res://icon.svg" id="1_n18ag"]
+[ext_resource type="Texture2D" uid="uid://cvy3qs4c3xa4k" path="res://Scenes/Character/projectiles/projectile1.png" id="1_7x5tb"]
+[ext_resource type="Script" path="res://Scenes/bullet.gd" id="1_r33nq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_we1yx"]
-size = Vector2(64, 62)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nmcaj"]
+size = Vector2(20, 6)
 
-[node name="Bullet" type="Node2D"]
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_r33nq")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(0.611723, 0.359301)
+texture = ExtResource("1_7x5tb")
+metadata/_edit_lock_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_n18ag")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("RectangleShape2D_we1yx")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nmcaj")
+metadata/_edit_lock_ = true

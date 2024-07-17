@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Levels/level.gd" id="1_j71q8"]
 [ext_resource type="PackedScene" uid="uid://d0q2eds7wwfdd" path="res://Scenes/Character/character.tscn" id="1_p5y7v"]
-[ext_resource type="Texture2D" uid="uid://kpjlxpgkrpeq" path="res://Scenes/Levels/Tilesets/Tileset.png" id="2_m314w"]
+[ext_resource type="Texture2D" path="res://Scenes/Levels/Tilesets/Tileset.png" id="2_m314w"]
 [ext_resource type="PackedScene" uid="uid://cid8w5mbwmgrc" path="res://Scenes/Character/ennemis.tscn" id="3_lq2xx"]
 [ext_resource type="PackedScene" uid="uid://8imo0u3hppet" path="res://Scenes/input settings/input_settings.tscn" id="4_sn3c7"]
 
@@ -679,3 +679,4 @@ metadata/_edit_lock_ = true
 
 [node name="InputSettings" parent="GUI" instance=ExtResource("4_sn3c7")]
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true

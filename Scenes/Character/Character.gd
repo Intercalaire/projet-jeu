@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite = get_node("AnimatedSprite")    # appel d'une librairie
 
-const bulletPath = preload("res://bullet.tscn") 
+var bulletPath = load("res://Scenes/bullet.tscn")
 
 var dir_dict : Dictionary = {
 	"_left": Vector2.LEFT,
@@ -23,20 +23,21 @@ func _ready():
 func _process(delta):
 	velocity = Vector2(direction.x, direction.y) * speed #determine l'axe X/Y de mon mouvement
 	move_and_slide()                                     #appel la fonction CharacterBody2D qui permet de bouger
+	
+	$Node2D.look_at(get_global_mouse_position())
 
 func _input(event):
-	direction.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left")) # controle la direction gauche droite
-	direction.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))    # controle la direction haut bas
+	direction.x = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left")) # controle la direction gauche droite
+	direction.y = int(Input.is_action_pressed("move_down")) - int(Input.is_action_pressed("move_up"))    # controle la direction haut bas
 	
 	direction = direction.normalized() #permet davoir un vecteur de toujours de longueur 1 (car sinon le deplacement en diagonal fais bouger le perso tres vite)
 	
-	
-	if Input.is_action_just_pressed("ui_accept"):
-		is_attacking = true
-
 	var dir_name = _find_dir_name(direction)
-	if is_attacking:
+	if Input.is_action_pressed("shoot"):
 		animated_sprite.play("attack" + dir_name)
+		print("je shoot")
+		shoot()
+
 	#animation de mouvement:
 	else:
 		animated_sprite.play("move" + dir_name) #appel d'une data struct
@@ -53,8 +54,8 @@ func _find_dir_name(dir: Vector2): #se balade dans un dictionnaire et regarde ou
 	return dir_key 
 
 #LES BALLES
-
 func shoot():
 	var bullet = bulletPath.instantiate()
-	bullet.positon = $Position2D.global_position
-	get_parent().add_child(bullet)
+	
+	owner.add_child(bullet)
+	bullet.transform = $Node2D/Position2D.global_transform
