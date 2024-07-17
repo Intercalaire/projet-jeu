@@ -1,10 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://d2rke20xiumnm"]
+[gd_scene load_steps=13 format=3 uid="uid://d2rke20xiumnm"]
 
 [ext_resource type="Script" path="res://Scenes/Levels/level.gd" id="1_j71q8"]
 [ext_resource type="PackedScene" uid="uid://d0q2eds7wwfdd" path="res://Scenes/Character/character.tscn" id="1_p5y7v"]
-[ext_resource type="Texture2D" path="res://Scenes/Levels/Tilesets/Tileset.png" id="2_m314w"]
+[ext_resource type="Texture2D" uid="uid://kpjlxpgkrpeq" path="res://Scenes/Levels/Tilesets/Tileset.png" id="2_m314w"]
 [ext_resource type="PackedScene" uid="uid://cid8w5mbwmgrc" path="res://Scenes/Character/ennemis.tscn" id="3_lq2xx"]
 [ext_resource type="PackedScene" uid="uid://8imo0u3hppet" path="res://Scenes/input settings/input_settings.tscn" id="4_sn3c7"]
+[ext_resource type="AudioStream" uid="uid://cb066tencjj4u" path="res://Scenes/audio/Tenebre_Rosso_Sangue_VRC6_Remix.wav" id="6_854qc"]
+[ext_resource type="AudioStream" uid="uid://dk8fdnuuy2hys" path="res://Scenes/audio/Dont_Worry_Cosmic_Trip.mp3" id="6_itf3a"]
+[ext_resource type="AudioStream" uid="uid://bfg5vnt6qwcs1" path="res://Scenes/audio/jr.mp3" id="8_0bpee"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qb4o7"]
 texture = ExtResource("2_m314w")
@@ -644,6 +647,15 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qb4o7")
 sources/1 = SubResource("TileSetAtlasSource_wy8i2")
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_0body"]
+streams_count = 3
+stream_0/stream = ExtResource("6_854qc")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("6_itf3a")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("8_0bpee")
+stream_2/weight = 1.0
+
 [node name="level" type="Node2D"]
 script = ExtResource("1_j71q8")
 metadata/_edit_lock_ = true
@@ -676,7 +688,13 @@ polygon = PackedVector2Array(64, 63, 1089, 64, 1090, 609, 63, 610, 64, 73, -50, 
 metadata/_edit_lock_ = true
 
 [node name="GUI" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="InputSettings" parent="GUI" instance=ExtResource("4_sn3c7")]
 metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_0body")
+volume_db = -10.0
+autoplay = true

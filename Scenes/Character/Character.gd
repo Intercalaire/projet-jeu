@@ -24,7 +24,7 @@ func _process(delta):
 	velocity = Vector2(direction.x, direction.y) * speed #determine l'axe X/Y de mon mouvement
 	move_and_slide()                                     #appel la fonction CharacterBody2D qui permet de bouger
 	
-	$Node2D.look_at(get_global_mouse_position())
+	$Weapons.look_at(get_global_mouse_position())
 
 func _input(event):
 	direction.x = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left")) # controle la direction gauche droite
@@ -35,7 +35,6 @@ func _input(event):
 	var dir_name = _find_dir_name(direction)
 	if Input.is_action_pressed("shoot"):
 		animated_sprite.play("attack" + dir_name)
-		print("je shoot")
 		shoot()
 
 	#animation de mouvement:
@@ -58,4 +57,4 @@ func shoot():
 	var bullet = bulletPath.instantiate()
 	
 	owner.add_child(bullet)
-	bullet.transform = $Node2D/Position2D.global_transform
+	bullet.transform = $Weapons/Position2D.global_transform

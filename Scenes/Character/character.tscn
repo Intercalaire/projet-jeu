@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://d0q2eds7wwfdd"]
+[gd_scene load_steps=39 format=3 uid="uid://d0q2eds7wwfdd"]
 
 [ext_resource type="Script" path="res://Scenes/Character/Character.gd" id="1_fujeg"]
 [ext_resource type="Texture2D" uid="uid://bt0jnthj0res4" path="res://Scenes/Character/Sprites/shoot with FX left.png" id="2_0ac7g"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b1g5rara6qdb6" path="res://Scenes/Character/Sprites/move with FX right.png" id="3_8utmc"]
 [ext_resource type="Texture2D" uid="uid://ktdmvc2sey51" path="res://Scenes/Character/Sprites/shoot with FX right.png" id="3_ckwbw"]
 [ext_resource type="Texture2D" uid="uid://dg5bgr306kxg1" path="res://Scenes/Character/Sprites/wake.png" id="4_iiikt"]
+[ext_resource type="PackedScene" uid="uid://cyho2ereig0lc" path="res://Scenes/Weapons/weapons.tscn" id="7_ug5xi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ahmns"]
 radius = 13.0
@@ -256,11 +257,7 @@ sprite_frames = SubResource("SpriteFrames_346bi")
 animation = &"attack_left"
 metadata/_edit_lock_ = true
 
-[node name="Node2D" type="Node2D" parent="."]
-metadata/_edit_lock_ = true
-
-[node name="Position2D" type="Marker2D" parent="Node2D"]
-position = Vector2(37, 0)
+[node name="Weapons" parent="." instance=ExtResource("7_ug5xi")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-43, 0)
