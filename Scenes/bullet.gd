@@ -8,19 +8,12 @@ func _physics_process(delta):
 	position += transform.x * speed * delta
 	#audio_player.play()
 
-func _on_Bullet_body_entered(body):
-	if body.is_in_group("mobs"):
-		body.queue_free()
+func _on_area_entered(area):
+	if area.is_in_group("zone_detections"):
+		print("tg")
+		area.explode()
+		queue_free()
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
-
-
-
-
-
-#extends CharacterBody2D
-#
-#var speed = 500
-#
-#func _physic_process(delta):
-	#print("toto")
-	#var collision_info = move_and_collide(velocity.normalized() * delta * speed)
+	

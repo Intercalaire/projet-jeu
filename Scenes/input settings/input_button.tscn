@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dsgxg8iafpn12"]
 
-[ext_resource type="FontFile" uid="uid://d1vyhbc3hnp83" path="res://Scenes/typographie/superstar_memesbruh03.ttf" id="1_e1t2e"]
+[ext_resource type="FontFile" uid="uid://dt7r1p1bnol2g" path="res://Scenes/typographie/BabaMediumPixels.ttf" id="1_sjfw5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d5fpc"]
 bg_color = Color(0, 0, 0, 0.392157)
@@ -28,6 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.00182, 1.04104)
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 3
 theme_override_constants/margin_right = 4
@@ -39,7 +40,7 @@ layout_mode = 2
 [node name="LabelAction" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_fonts/font = ExtResource("1_e1t2e")
+theme_override_fonts/font = ExtResource("1_sjfw5")
 text = "Action Name"
 vertical_alignment = 1
 
@@ -51,6 +52,6 @@ mouse_filter = 1
 [node name="LabelInput" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_fonts/font = ExtResource("1_e1t2e")
+theme_override_fonts/font = ExtResource("1_sjfw5")
 text = "input key"
 vertical_alignment = 1

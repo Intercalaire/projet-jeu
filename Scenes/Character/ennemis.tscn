@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cid8w5mbwmgrc"]
+[gd_scene load_steps=20 format=3 uid="uid://cid8w5mbwmgrc"]
 
 [ext_resource type="Script" path="res://Scenes/Levels/ennemis.gd" id="1_am3ls"]
 [ext_resource type="Texture2D" uid="uid://bytf1ka2jfgqo" path="res://Scenes/Character/ennemis/shock attack.png" id="2_kk5ju"]
@@ -110,7 +110,10 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_42gyf"]
-radius = 12.0
+radius = 2334.19
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x67h6"]
+radius = 8.06226
 
 [node name="ennemis" type="CharacterBody2D"]
 script = ExtResource("1_am3ls")
@@ -119,9 +122,21 @@ script = ExtResource("1_am3ls")
 scale = Vector2(1.28889, 1.46774)
 sprite_frames = SubResource("SpriteFrames_2d6qc")
 animation = &"ennemi1"
+offset = Vector2(0, -15)
+
+[node name="zone_detection_attack" type="Area2D" parent="."]
+visible = false
+collision_layer = 2
+collision_mask = 2
 metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="zone_detections" type="CollisionShape2D" parent="zone_detection_attack"]
 position = Vector2(-1, 7)
 shape = SubResource("CircleShape2D_42gyf")
-metadata/_edit_lock_ = true
+
+[node name="CollisionEnnemis" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_x67h6")
+
+[connection signal="body_entered" from="zone_detection_attack" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="zone_detection_attack" to="." method="_on_detection_area_body_exited"]
