@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy5hwq0sqt5xq"]
+
+[ext_resource type="FontFile" uid="uid://dt7r1p1bnol2g" path="res://Scenes/typographie/BabaMediumPixels.ttf" id="1_blsyh"]
+[ext_resource type="Script" path="res://Scenes/Menu/OptionsMenu.gd" id="1_re3od"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_re3od")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -40.0
+offset_right = 34.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Controls" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_blsyh")
+text = "Controls"
+
+[node name="Langue" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_blsyh")
+text = "Langue"
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_blsyh")
+text = "Back"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Langue" to="." method="_on_langue_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

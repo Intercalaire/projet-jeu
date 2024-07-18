@@ -70,5 +70,5 @@ func _create_action_list():
 #
 #
 ## Replace with function body.
-#func _on_reset_button_pressed():
-	#_create_action_list()
+func _on_reset_button_pressed():
+	get_tree().change_scene_to_file("res://Scenes/Menu/OptionsMenu.tscn")

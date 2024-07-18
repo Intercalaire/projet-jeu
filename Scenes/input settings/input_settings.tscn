@@ -60,10 +60,10 @@ layout_mode = 2
 [node name="InputButton5" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("1_cg5bt")]
 layout_mode = 2
 
-[node name="ResetButtons" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+[node name="BackButtons" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
 theme_override_fonts/font = ExtResource("1_kfvxc")
-text = "\\Thanks for playing/"
+text = "Back to Menu"
 
-[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ResetButtons" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/BackButtons" to="." method="_on_reset_button_pressed"]
