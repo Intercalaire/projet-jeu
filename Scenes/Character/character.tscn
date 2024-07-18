@@ -263,3 +263,8 @@ metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-43, 0)
+
+[node name="CooldownTimer" type="Timer" parent="."]
+wait_time = 0.528
+
+[connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]

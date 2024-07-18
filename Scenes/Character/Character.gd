@@ -16,6 +16,7 @@ var direction = Vector2.ZERO #les vecteur X/Y (haut, bas, gauche, droite)
 
 var is_attacking = false
 var is_moving = false
+var is_ready = true
 
 func _ready():
 	animated_sprite.play("start")
@@ -54,7 +55,14 @@ func _find_dir_name(dir: Vector2): #se balade dans un dictionnaire et regarde ou
 
 #LES BALLES
 func shoot():
-	var bullet = bulletPath.instantiate()
-	
-	owner.add_child(bullet)
-	bullet.transform = $Weapons/Position2D.global_transform
+	if is_ready:
+		is_ready = false
+		$CooldownTimer.start()
+		var bullet = bulletPath.instantiate()
+		
+		owner.add_child(bullet)
+		bullet.transform = $Weapons/Position2D.global_transform
+
+
+func _on_cooldown_timer_timeout():
+	is_ready = true
