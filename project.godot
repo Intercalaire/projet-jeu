@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="projet de jeu"
+config/name="road to roguelike"
 run/main_scene="res://Scenes/Menu/Menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
