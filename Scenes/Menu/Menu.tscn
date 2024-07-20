@@ -1,16 +1,16 @@
 [gd_scene load_steps=17 format=3 uid="uid://c53voml4ras4t"]
 
 [ext_resource type="Script" path="res://Scenes/Menu/Menu.gd" id="1_iaohr"]
-[ext_resource type="Texture2D" uid="uid://y56lcjmtpklv" path="res://Scenes/Menu/ecran noir.png" id="2_4abhv"]
+[ext_resource type="Texture2D" uid="uid://dnuab0g4ea2xt" path="res://Scenes/input settings/Sprite/ecran noir.png" id="2_4abhv"]
 [ext_resource type="FontFile" uid="uid://dt7r1p1bnol2g" path="res://Scenes/typographie/BabaMediumPixels.ttf" id="2_a1l3a"]
-[ext_resource type="Texture2D" uid="uid://ck4fbu8svjq7f" path="res://Scenes/Menu/MenuTileset1xPadding.png" id="2_cyh2k"]
-[ext_resource type="Texture2D" uid="uid://876hsdhhb3fl" path="res://Scenes/Menu/Sprite/cercle de lumiere.png" id="3_8rfpg"]
-[ext_resource type="Texture2D" uid="uid://bofbinlrt2yd3" path="res://Scenes/Menu/MenuTileset.png" id="3_jnq4t"]
-[ext_resource type="Texture2D" uid="uid://bln8mrb5xm77l" path="res://Scenes/Menu/Sprite/light.png" id="4_rxkth"]
+[ext_resource type="Texture2D" uid="uid://876hsdhhb3fl" path="res://Scenes/input settings/Sprite/cercle de lumiere.png" id="2_cyh2k"]
+[ext_resource type="Texture2D" uid="uid://876hsdhhb3fl" path="res://Scenes/input settings/Sprite/cercle de lumiere.png" id="3_8rfpg"]
+[ext_resource type="Texture2D" uid="uid://by4wy6ed480h7" path="res://Scenes/Menu/Sprite/MenuTileset.png" id="3_jnq4t"]
+[ext_resource type="Texture2D" uid="uid://bln8mrb5xm77l" path="res://Scenes/input settings/Sprite/light.png" id="4_rxkth"]
 [ext_resource type="AudioStream" uid="uid://cb066tencjj4u" path="res://Scenes/audio/Tenebre_Rosso_Sangue_VRC6_Remix.wav" id="5_306qw"]
 [ext_resource type="AudioStream" uid="uid://dk8fdnuuy2hys" path="res://Scenes/audio/Dont_Worry_Cosmic_Trip.mp3" id="6_0klh1"]
 [ext_resource type="AudioStream" uid="uid://bfg5vnt6qwcs1" path="res://Scenes/audio/jr.mp3" id="7_oq8rc"]
-[ext_resource type="Texture2D" uid="uid://d0kyffj5g7hxs" path="res://Scenes/Menu/Sprite/sang buttontest.png" id="8_l6p05"]
+[ext_resource type="Texture2D" uid="uid://d0kyffj5g7hxs" path="res://Scenes/input settings/Sprite/sang buttontest.png" id="8_l6p05"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4k4m1"]
 texture = ExtResource("2_cyh2k")
