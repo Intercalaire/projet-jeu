@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dyxon3n1yev44"]
+[gd_scene load_steps=9 format=3 uid="uid://dyxon3n1yev44"]
 
+[ext_resource type="Script" path="res://Scenes/breakroom/solo/beakzone.gd" id="1_kmml0"]
 [ext_resource type="Texture2D" uid="uid://dve83je1thln7" path="res://Scenes/breakroom/sprite/Table_debrif.png" id="1_s33d2"]
 [ext_resource type="Texture2D" uid="uid://kpjlxpgkrpeq" path="res://Scenes/Levels/Tilesets/Tileset.png" id="2_w44n2"]
 [ext_resource type="PackedScene" uid="uid://d32cog6ppikfy" path="res://Scenes/breakroom/solo/breakroom.tscn" id="3_b1ifu"]
@@ -208,6 +209,7 @@ sources/1 = SubResource("TileSetAtlasSource_wb41w")
 sources/2 = SubResource("TileSetAtlasSource_86py0")
 
 [node name="beakzone" type="Node2D"]
+script = ExtResource("1_kmml0")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_hhyfd")
