@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy5hwq0sqt5xq"]
+[gd_scene load_steps=5 format=3 uid="uid://dy5hwq0sqt5xq"]
 
 [ext_resource type="FontFile" uid="uid://dt7r1p1bnol2g" path="res://Scenes/typographie/BabaMediumPixels.ttf" id="1_blsyh"]
 [ext_resource type="Script" path="res://Scenes/Menu/OptionsMenu.gd" id="1_re3od"]
+[ext_resource type="Texture2D" uid="uid://dnuab0g4ea2xt" path="res://Scenes/Menu/Sprite/ecran noir.png" id="2_l41xd"]
+[ext_resource type="Texture2D" uid="uid://876hsdhhb3fl" path="res://Scenes/Menu/Sprite/cercle de lumiere.png" id="3_50vav"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -11,6 +13,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_re3od")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_l41xd")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -26,8 +37,18 @@ offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="PointLight2D" type="PointLight2D" parent="MarginContainer"]
+position = Vector2(43, 58)
+scale = Vector2(10.5659, 3.06862)
+color = Color(0.690196, 0.470588, 0.27451, 1)
+energy = 6.35
+texture = ExtResource("3_50vav")
+texture_scale = 1.85
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Controls" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

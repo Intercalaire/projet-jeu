@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://crnfbnxljw3l"]
+
+[ext_resource type="Texture2D" uid="uid://dnuab0g4ea2xt" path="res://Scenes/Menu/Sprite/ecran noir.png" id="1_kp7jf"]
+[ext_resource type="Script" path="res://Scenes/Menu/PlaySolo or Multi Menu/PlayMenu.gd" id="1_omcf3"]
+[ext_resource type="Texture2D" uid="uid://876hsdhhb3fl" path="res://Scenes/Menu/Sprite/cercle de lumiere.png" id="2_3hkli"]
+[ext_resource type="FontFile" uid="uid://dt7r1p1bnol2g" path="res://Scenes/typographie/BabaMediumPixels.ttf" id="3_3haxg"]
+
+[node name="PlayMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_omcf3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_kp7jf")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -40.0
+offset_right = 34.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PointLight2D" type="PointLight2D" parent="TextureRect/MarginContainer"]
+position = Vector2(33, 40)
+scale = Vector2(10.5659, 3.06862)
+color = Color(0.690196, 0.470588, 0.27451, 1)
+energy = 6.35
+texture = ExtResource("2_3hkli")
+texture_scale = 1.85
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Solo" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_3haxg")
+text = "Solo"
+
+[node name="Langue" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_3haxg")
+text = "Multiplayer"
+
+[node name="Back" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_3haxg")
+text = "Back"
+
+[connection signal="pressed" from="TextureRect/MarginContainer/VBoxContainer/Solo" to="." method="_on_solo_pressed"]
+[connection signal="pressed" from="TextureRect/MarginContainer/VBoxContainer/Langue" to="." method="_on_langue_pressed"]
+[connection signal="pressed" from="TextureRect/MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

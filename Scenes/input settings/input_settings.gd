@@ -13,7 +13,7 @@ var input_actions = {
 	"move_right": "Move Right",
 	"move_left": "Move Left",
 	"shoot": "Shoot",
-	#"interact": "Interact",
+	"interact": "Interact",
 } 
 
 func _ready():

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://scht6ldyjvgs"]
+
+[ext_resource type="FontFile" uid="uid://dt7r1p1bnol2g" path="res://Scenes/typographie/BabaMediumPixels.ttf" id="1_nmwwd"]
+[ext_resource type="Script" path="res://Scenes/breakroom/interaction/iMScript.gd" id="1_t77eq"]
+
+[node name="InteractionManager" type="Node2D"]
+script = ExtResource("1_t77eq")
+
+[node name="LinePlay" type="Label" parent="."]
+z_index = 20
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
+offset_bottom = 16.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_nmwwd")
+text = "[E] TO PLAY"
+horizontal_alignment = 1
+vertical_alignment = 1

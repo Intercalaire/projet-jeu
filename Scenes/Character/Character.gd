@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = get_node("AnimatedSprite")    # appel d'une librairie
+@onready var interaction_area: ZoneDetectionElements = $ZoneDetectionElements
+
 
 var bulletPath = load("res://Scenes/bullet.tscn")
 
